@@ -43,6 +43,14 @@ const dataList = [
         name: 'TutorialsPoint',
         link: 'https://www.tutorialspoint.com/index.htm',
     },
+    {
+        name: 'Medium',
+        link: 'https://medium.com/',
+    },
+    {
+        name: 'Vue',
+        link: 'https://cn.vuejs.org/',
+    },
 ]
 
 export default dataList;
