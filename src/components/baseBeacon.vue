@@ -1,5 +1,4 @@
 <script setup>
-import { onMounted, ref, watch } from "vue";
 import dataList from "../dataList.js";
 import hoverAnimation from '../utils/hoverAnimation.js'
 
@@ -28,6 +27,7 @@ onMounted(() => {
 });
 
 //data
+const router = useRouter();
 const title = ref("Welcome to Beacon");
 var isShow = ref(false);
 
@@ -40,10 +40,14 @@ const setHover = () => {
     hoverAni.create();
   });
 };
+
+const toTest = () => {
+  router.push('/test')
+}
 </script>
 
 <template>
-  <div><span class="title">{{ title }}</span></div>
+  <div><span class="title" @click="toTest">{{ title }}</span></div>
   <ul class="link-list">
     <li class="list-item" v-for="(item, index) in dataList" :key="index">
       <a :href="item.link" target="_blank">{{ item.name }}</a>

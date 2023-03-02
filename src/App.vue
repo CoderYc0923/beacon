@@ -1,9 +1,8 @@
 <script setup>
-  import baseBeacon from './components/baseBeacon.vue'
 </script>
 
 <template>
-  <base-beacon></base-beacon>
+  <router-view></router-view>
 </template>
 
 <style scoped lang="scss">
